@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Customer {
-    private int tel;
+    private String tel;
     private String ownerName;
     private String petName;
     private List<MedicalRecord> medicalRecords; //진료 기록을 저장하는 테스트
 //진료기록은 고객이 아니기 때문에 생성자에서 뺌
     public Customer(){}
 
-    public Customer(int tel, String name, String petName) {
+    public Customer(String tel, String name, String petName) {
         this.tel = tel;
         this.ownerName = name;
         this.petName = petName;
@@ -20,11 +20,11 @@ public class Customer {
         //ArrayList를 가지고 있어야 진료를 할때 마다 medicalRecord 에 진료 기록을 집어넣는다
     }
 
-    public int getTel() {
+    public String getTel() {
         return tel;
     }
 
-    public void setTel(int tel) {
+    public void setTel(String tel) {
         this.tel = tel;
     }
 
