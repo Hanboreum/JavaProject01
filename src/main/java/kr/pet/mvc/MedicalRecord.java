@@ -36,4 +36,13 @@ public class MedicalRecord {
     public void setContent(String content) {
         this.content = content;
     }
+
+    @Override
+    public String toString() {
+        return "MedicalRecord{" +
+                "tel='" + tel + '\'' +
+                ", date='" + date + '\'' +
+                ", content='" + content + '\'' +
+                '}';
+    }
 }
