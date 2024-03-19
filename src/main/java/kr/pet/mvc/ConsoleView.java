@@ -11,7 +11,7 @@ public class ConsoleView {
         return sc.next();
     }
     //신규고객 정보 입력
-    public Customer getCustomerInfo(){
+    public Customer getCustomerInfo(){ //case 1:
         System.out.println("신규 고객 정보를 입력하세요");
         System.out.println(" 전화번호");
         String tel = sc.nextLine();
